@@ -2,7 +2,8 @@
 #include<stdlib.h>
 
 float saldo = 1000;
-int senha =  1234;
+int senha = 1234;
+int conta = 1234;
 
 void consultarSaldo() {
     printf("\nSaldo atual: R$ %.2f\n", saldo);
@@ -10,7 +11,8 @@ void consultarSaldo() {
 
 void depositar() {
     float valor;
-     printf("\nValor para deposito: R$ ");
+
+    printf("\nValor para deposito: R$ ");
     scanf("%f", &valor);
 
     if(valor > 0){
@@ -52,7 +54,6 @@ void alterarSenha() {
 
 int main() {
 
-    int conta = 1234;
     int loginConta, loginSenha;
     int tentativas = 3;
     int opcao;
@@ -67,7 +68,7 @@ int main() {
         printf("Senha: ");
         scanf("%d",&loginSenha);
 
-        if(loginConta == 1234 && loginSenha == senha){
+        if(loginConta == conta && loginSenha == senha){
             printf("\nLogin realizado!\n");
             break;
         }
@@ -76,7 +77,7 @@ int main() {
 
         printf("Dados incorretos! Tentativas restantes: %d\n", tentativas);
     }
-    
+
     if(tentativas == 0){
         printf("Conta bloqueada!\n");
         return 0;
