@@ -20,3 +20,21 @@ void depositar() {
         printf("Valor invalido!\n");
     }
 }
+
+void sacar() {
+    float valor;
+
+    printf("\nValor para saque: R$ ");
+    scanf("%f", &valor);
+
+    if(valor <= 0){
+        printf("Valor invalido!\n");
+    }
+    else if(valor > saldo){
+        printf("Saldo insuficiente!\n");
+    }
+    else{
+        saldo -= valor;
+        printf("Saque realizado!\n");
+    }
+}
