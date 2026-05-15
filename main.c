@@ -95,5 +95,24 @@ int main() {
         scanf("%d",&opcao);
 
         switch(opcao){
-            
+
+            case 1:
+                consultarSaldo();
+                break;
+
+            case 2:
+                depositar();
+                break;
+
+            case 3:
+                sacar();
+                break;
+
+            case 4:
+                alterarSenha();
+                break;
+
+            case 0:
+                printf("Encerrando sistema...\n");
+                break;
         }
