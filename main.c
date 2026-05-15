@@ -76,7 +76,22 @@ int main() {
 
         printf("Dados incorretos! Tentativas restantes: %d\n", tentativas);
     }
+    
     if(tentativas == 0){
         printf("Conta bloqueada!\n");
         return 0;
     }
+
+    do{
+
+        printf("\n===== MENU =====\n");
+        printf("1 - Consultar saldo\n");
+        printf("2 - Depositar\n");
+        printf("3 - Sacar\n");
+        printf("4 - Alterar senha\n");
+        printf("0 - Sair\n");
+
+        printf("Escolha: ");
+        scanf("%d",&opcao);
+
+        switch(opcao){
