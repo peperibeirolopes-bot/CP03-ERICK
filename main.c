@@ -56,3 +56,23 @@ int main() {
     int loginConta, loginSenha;
     int tentativas = 3;
     int opcao;
+
+    printf("===== CAIXA ELETRONICO =====\n");
+
+    while(tentativas > 0){
+
+        printf("\nConta: ");
+        scanf("%d",&loginConta);
+
+        printf("Senha: ");
+        scanf("%d",&loginSenha);
+
+        if(loginConta == 1234 && loginSenha == senha){
+            printf("\nLogin realizado!\n");
+            break;
+        }
+
+        tentativas--;
+
+        printf("Dados incorretos! Tentativas restantes: %d\n", tentativas);
+    }
