@@ -76,3 +76,7 @@ int main() {
 
         printf("Dados incorretos! Tentativas restantes: %d\n", tentativas);
     }
+    if(tentativas == 0){
+        printf("Conta bloqueada!\n");
+        return 0;
+    }
