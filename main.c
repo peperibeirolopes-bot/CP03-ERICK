@@ -10,3 +10,13 @@ void consultarSaldo() {
 
 void depositar() {
     float valor;
+     printf("\nValor para deposito: R$ ");
+    scanf("%f", &valor);
+
+    if(valor > 0){
+        saldo += valor;
+        printf("Deposito realizado!\n");
+    }else{
+        printf("Valor invalido!\n");
+    }
+}
