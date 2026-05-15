@@ -38,3 +38,14 @@ void sacar() {
         printf("Saque realizado!\n");
     }
 }
+
+void alterarSenha() {
+    int nova;
+
+    printf("\nDigite a nova senha: ");
+    scanf("%d", &nova);
+
+    senha = nova;
+
+    printf("Senha alterada com sucesso!\n");
+}
