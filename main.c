@@ -115,4 +115,12 @@ int main() {
             case 0:
                 printf("Encerrando sistema...\n");
                 break;
+
+            default:
+                printf("Opcao invalida!\n");
         }
+
+    }while(opcao != 0);
+
+    return 0;
+}
