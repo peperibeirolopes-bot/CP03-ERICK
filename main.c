@@ -49,3 +49,10 @@ void alterarSenha() {
 
     printf("Senha alterada com sucesso!\n");
 }
+
+int main() {
+
+    int conta = 1234;
+    int loginConta, loginSenha;
+    int tentativas = 3;
+    int opcao;
